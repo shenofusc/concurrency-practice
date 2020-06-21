@@ -4,7 +4,7 @@ package examples;
  * server模式下不会打印数值，但是client模式下应该会打印出来
  */
 public class NoVisibility {
-    private static boolean ready;
+    private static volatile boolean ready;
     private static int number;
 
     private static class ReaderThread extends Thread {

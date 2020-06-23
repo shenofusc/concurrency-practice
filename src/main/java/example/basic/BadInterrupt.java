@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * 线程内部不处理中断时，外部调用Thread.interrupt()方法是无效的

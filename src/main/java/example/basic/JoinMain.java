@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * Thread.join()方法使用示例，本质上是让调用join()方法的main线程wait()在at线程对象实例上

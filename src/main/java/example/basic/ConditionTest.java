@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;

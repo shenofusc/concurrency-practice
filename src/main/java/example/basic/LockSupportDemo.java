@@ -1,9 +1,11 @@
-package example;
+package example.basic;
+
+import java.util.concurrent.locks.LockSupport;
 
 /**
- * Thread.resume()被提前执行导致线程一直处于suspend状态无法退出的场景
+ * LockSupport示例，park()方法中可以设置一个阻塞对象，方便分析问题。
  */
-public class BadSuspend {
+public class LockSupportDemo {
     public static Object u = new Object();
     static ChangeObjectThread t1 = new ChangeObjectThread("t1");
     static ChangeObjectThread t2 = new ChangeObjectThread("t2");
@@ -17,7 +19,7 @@ public class BadSuspend {
         public void run() {
             synchronized (u) {
                 System.out.println("in " + getName());
-                Thread.currentThread().suspend();
+                LockSupport.park(this);
             }
         }
     }
@@ -26,8 +28,9 @@ public class BadSuspend {
         t1.start();
         Thread.sleep(100);
         t2.start();
-        t1.resume();
-        t2.resume();
+        Thread.sleep(10000);
+        LockSupport.unpark(t1);
+        LockSupport.unpark(t2);
         t1.join();
         t2.join();
     }

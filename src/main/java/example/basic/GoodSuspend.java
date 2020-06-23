@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * 利用wait()方法和notify()方法结合volatile特性在应用层实现suspend()和resume()功能

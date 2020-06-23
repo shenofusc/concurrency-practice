@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * Thread.isInterrupted()检查中断状态不会清除中断状态，Thread.sleep()方法被中断时会抛出异常并清除中断状态

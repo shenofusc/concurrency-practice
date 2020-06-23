@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 import java.lang.Runnable;
 

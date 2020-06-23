@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * 用于演示使用Thread.stop()导致数据不一致的问题

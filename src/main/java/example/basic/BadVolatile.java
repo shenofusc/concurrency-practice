@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * volatile无法保证复合操作的原子性

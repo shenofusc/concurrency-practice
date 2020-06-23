@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;

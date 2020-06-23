@@ -1,4 +1,4 @@
-package example;
+package example.basic;
 
 /**
  * Created by shy on 6/20/20.

@@ -1,4 +1,4 @@
-package examples;
+package example;
 
 /**
  * 演示了Object.wait()和Object.notify()的加锁和解锁场景，T2执行notify()之后，在wait()方法上阻塞的T1必须先获取锁之后才能继续执行

@@ -1,4 +1,4 @@
-package examples;
+package example;
 
 /**
  * 多线程写入冲突的场景

@@ -1,7 +1,7 @@
-package examples;
+package example;
 
 /**
- * Created by shenhy on 6/20/20.
+ * Created by shy on 6/20/20.
  */
 public class InterruptWait {
     private static Object obj = new Object();

@@ -1,11 +1,11 @@
-package examples;
+package example;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
- * Created by shenhy on 6/23/20.
+ * Created by shy on 6/23/20.
  */
 public class SemaphoreDemo implements Runnable {
     final Semaphore semaphore = new Semaphore(5);

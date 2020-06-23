@@ -1,7 +1,7 @@
-package examples;
+package example;
 
 /**
- * Created by shenhy on 6/21/20.
+ * Created by shy on 6/21/20.
  */
 public class ThreadGroupName implements Runnable {
     @Override

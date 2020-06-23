@@ -1,7 +1,7 @@
-package examples;
+package example;
 
 /**
- * Created by shenhy on 6/22/20.
+ * Created by shy on 6/22/20.
  */
 public class PriorityDemo {
     public static class HighPriority extends Thread {

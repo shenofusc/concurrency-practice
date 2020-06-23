@@ -1,4 +1,4 @@
-package examples;
+package example;
 
 /**
  * server模式下不会打印数值，但是client模式下应该会打印出来

@@ -1,4 +1,4 @@
-package examples;
+package example;
 
 /**
  * Thread.resume()被提前执行导致线程一直处于suspend状态无法退出的场景

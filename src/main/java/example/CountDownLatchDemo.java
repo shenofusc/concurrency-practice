@@ -1,4 +1,4 @@
-package examples;
+package example;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

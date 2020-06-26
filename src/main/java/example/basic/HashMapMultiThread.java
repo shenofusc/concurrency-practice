@@ -7,7 +7,7 @@ import java.util.Map;
  * 多线程场景下使用HashMap导致死循环
  */
 public class HashMapMultiThread {
-    static Map<String, String> map = new HashMap<>();
+    static Map<String, String> map = new HashMap<String, String>();
 
     public static class AddThread implements Runnable {
         int start = 0;

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 并发场景下的ArrayList
  */
 public class ArrayListMultiThread {
-    static ArrayList<Integer> al = new ArrayList<>(10);
+    static ArrayList<Integer> al = new ArrayList<Integer>(10);
     public static class AddThread implements Runnable {
 
         @Override

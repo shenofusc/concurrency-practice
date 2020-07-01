@@ -11,7 +11,7 @@ import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by wb-shy364099 on 20/6/30.
+ * Created by shy on 20/6/30.
  */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)

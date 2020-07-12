@@ -1,6 +1,9 @@
 package example.executor;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * submit()方法内部重新封装了任务，不会抛出异常，调用get()方法时才会抛出。

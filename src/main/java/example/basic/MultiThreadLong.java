@@ -1,7 +1,5 @@
 package example.basic;
 
-import java.lang.Runnable;
-
 /**
  * 用于演示在32位JDK上操作64位数据无法保证原子性的问题
  */

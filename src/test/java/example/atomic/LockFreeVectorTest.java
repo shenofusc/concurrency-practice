@@ -1,6 +1,5 @@
 package example.atomic;
 
-import example.other.JmhSample;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;

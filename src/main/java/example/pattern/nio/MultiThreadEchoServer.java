@@ -1,17 +1,11 @@
 package example.pattern.nio;
 
-import java.io.*;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.ByteBuffer;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.spi.SelectorProvider;
-import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -35,7 +29,7 @@ public class MultiThreadEchoServer {
             try {
                 reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 writer = new PrintWriter(clientSocket.getOutputStream(), true);
-                String inputLine = null;
+                String inputLine;
                 long b = System.currentTimeMillis();
                 while ((inputLine = reader.readLine()) != null) {
                     writer.println(inputLine);
@@ -58,7 +52,7 @@ public class MultiThreadEchoServer {
 
     public static void main(String[] args) {
         ServerSocket echoServer = null;
-        Socket clientSocket = null;
+        Socket clientSocket;
         try {
             echoServer = new ServerSocket(8000);
         } catch (IOException e) {

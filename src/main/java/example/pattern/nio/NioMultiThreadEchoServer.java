@@ -1,11 +1,8 @@
 package example.pattern.nio;
 
-import example.basic.RndTask;
-
-import java.io.*;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
@@ -31,7 +28,7 @@ public class NioMultiThreadEchoServer {
         ServerSocketChannel ssc = ServerSocketChannel.open();
         ssc.configureBlocking(false);
 
-        //绑定Channel的Socket到指定地址和端口
+        //绑定Channel的Socket到指定端口
         InetSocketAddress isa = new InetSocketAddress(8000);
         ssc.socket().bind(isa);
 

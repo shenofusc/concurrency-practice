@@ -20,6 +20,7 @@ public class ConditionTest {
                 try {
                     lock.lock();
                     System.out.println("threa A:" + ++index);
+                    Thread.sleep(1000);
                     conditionB.signal();
                     conditionA.await();
                 } catch (InterruptedException e) {
@@ -38,6 +39,7 @@ public class ConditionTest {
                 try {
                     lock.lock();
                     System.out.println("threa B:" + ++index);
+                    Thread.sleep(1000);
                     conditionC.signal();
                     conditionB.await();
                 } catch (InterruptedException e) {
@@ -56,6 +58,7 @@ public class ConditionTest {
                 try {
                     lock.lock();
                     System.out.println("threa C:" + ++index);
+                    Thread.sleep(1000);
                     conditionA.signal();
                     conditionC.await();
                 } catch (InterruptedException e) {
